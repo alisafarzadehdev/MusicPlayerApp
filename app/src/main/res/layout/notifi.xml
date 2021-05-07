@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/backs"
+    android:paddingBottom="8dp"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="9"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+    <TextView
+        android:textSize="22sp"
+        android:id="@+id/textviessongnotifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="center"
+        android:textColor="@color/one"  />
+
+    <TextView
+        android:id="@+id/textviessingernotifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:textSize="18sp"
+        android:text="TextView"
+        android:textColor="@color/one" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnclose"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/exit"
+        android:gravity="right" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_weight="5"
+        >
+
+        <ImageView
+            android:id="@+id/backsongnotifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/fivebefore" />
+
+        <ImageView
+            android:id="@+id/previewnotifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/backk" />
+
+        <ImageView
+            android:id="@+id/playnotifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/playyy" />
+
+        <ImageView
+            android:id="@+id/nextnotifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/nextt" />
+
+        <ImageView
+            android:id="@+id/nextsongnotifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/fiveafter" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

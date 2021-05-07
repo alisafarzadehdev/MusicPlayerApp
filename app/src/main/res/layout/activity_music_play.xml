@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicPlayActivity"
+    android:background="@color/three"
+    >
+
+
+    <ImageView
+        android:id="@+id/imgbacks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/one"
+        android:text="00:00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/enttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="@color/one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/soundeffect"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_fileName="voice-recognition.json"
+        app:lottie_loop="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:src="@drawable/icplaynotfound"
+        app:layout_constraintBottom_toTopOf="@+id/soundeffect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imgpreviuos"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/backk" />
+
+        <ImageView
+            android:id="@+id/imgview"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/playyy" />
+
+        <ImageView
+            android:id="@+id/imgnext"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/nextt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/lin"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/songtextplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:fontFamily="@font/times"
+            android:paddingBottom="8dp"
+            android:text="TextView"
+            android:textColor="@color/one"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/singertextplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:fontFamily="@font/times"
+            android:paddingTop="8dp"
+            android:text="TextView"
+            android:textColor="@color/one"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

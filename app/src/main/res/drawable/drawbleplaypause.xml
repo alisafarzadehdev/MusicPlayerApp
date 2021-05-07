@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <transition>
+            <item android:drawable="@drawable/icplaycircle"/>
+            <item android:drawable="@drawable/icpausecircle"/>
+        </transition>
+    </item>
+
+</selector>

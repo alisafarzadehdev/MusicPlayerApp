@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/three"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgcover"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/songtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/times"
+        android:textSize="22sp"
+        android:text="singer"
+        android:textColor="@color/aicons"
+        app:layout_constraintStart_toEndOf="@+id/imgcover"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/singertextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/times"
+        android:textSize="18sp"
+        android:text="song"
+        android:textColor="@color/aprimary_light"
+        app:layout_constraintBottom_toBottomOf="@+id/imgcover"
+        app:layout_constraintStart_toEndOf="@+id/imgcover" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/aprimary_light"
+        android:text="____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgcover" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="110dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
